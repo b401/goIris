@@ -25,15 +25,15 @@ A lot of functions are missing and will potentially added over time.
 ## Basic setup
 
 ```
-conf := iris.GetInstance()
+conf := goiris.GetInstance()
 conf.BaseUrl = "https://iris.lab"
 conf.AuthToken = "{ReplaceMe}"
 
-authStrategy := &iris.ApiKeyAuth{ApiKey: conf.AuthToken}
+authStrategy := &goiris.ApiKeyAuth{ApiKey: conf.AuthToken}
 
-irisClient := &iris.APIClient{
+irisClient := &goiris.APIClient{
         AuthStrategy: authStrategy,
         BaseURL:      conf.BaseUrl,
-        Client:       *iris.NewConfiguredHttpClient(iris.ClientConfig{IgnoreTLS: true}),
+        Client:       *goiris.NewConfiguredHttpClient(goiris.ClientConfig{IgnoreTLS: true}),
     }
 ```

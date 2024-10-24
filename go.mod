@@ -1,3 +1,3 @@
-module github.com/b401/iris
+module github.com/b401/goiris
 
 go 1.22.3

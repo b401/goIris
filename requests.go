@@ -1,4 +1,4 @@
-package iris
+package goiris
 
 type RequestBuilder struct {
 	Method  string

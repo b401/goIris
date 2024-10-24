@@ -1,4 +1,4 @@
-package iris
+package goiris
 
 import (
 	"encoding/json"
